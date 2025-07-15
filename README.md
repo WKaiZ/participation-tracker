@@ -1,34 +1,3 @@
-# Participation Tracker
-
-This is a simple command-line tool for tracking participation points. It's designed to be used in a classroom or group setting to keep a running tally of scores for individuals. The script is interactive and saves its state between sessions.
-
-## Features
-
-* **Load Names:** Can initialize the list of participants from a `.rtf` or a plain `.txt` file.
-* **Persistent Scores:** Saves scores to a `scores.txt` file and loads them automatically on startup.
-* **Interactive Command Loop:** Provides a simple command-line interface to manage scores.
-* **Fuzzy Name Matching:** You don't have to type the full, exact name; the script will find the closest match.
-* **Score Adjustments:** Add or subtract points, or set a score to an absolute value.
-* **Add/Remove Participants:** Easily add new people or remove existing ones.
-* **Undo Functionality:** Revert the last one or more operations.
-* **Random Participant Selection:** Pick a random person from the list.
-* **Human-Readable Output:** Displays a nicely formatted leaderboard.
-
-## Setup
-
-1.  **Python:** Make sure you have Python 3 installed on your system.
-2.  **Initial Names File:**
-    * Create a file named `names.rtf` or `names.txt` in the same directory as the script.
-    * List the full names of all participants, with one name per line.
-    * The script will use this file to create the initial `scores.txt` file if one doesn't already exist.
-
-## How to Run
-
-Open a terminal or command prompt, navigate to the directory where `participation.py` is located, and run the script:
-
-`Of course. Here is the content of the README file in Markdown syntax for you to copy and paste.
-
-Markdown
 
 # Participation Tracker
 
@@ -87,9 +56,9 @@ This is a simple text file containing one name per line. The script is designed 
 
 **Example `names.txt`:**
 
-`Alice Smith
-Bob Johnson
-Charlie Brown`
+`Alice Smith`
+`Bob Johnson`
+`Charlie Brown`
 
 ### Output: `scores.txt`
 
