@@ -56,8 +56,8 @@ This is a simple text file containing one name per line. The script is designed 
 
 **Example `names.txt`:**
 
-`Alice Smith`\n
-`Bob Johnson`\n
+`Alice Smith` <br>
+`Bob Johnson` <br>
 `Charlie Brown`
 
 ### Output: `scores.txt`
