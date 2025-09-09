@@ -1,9 +1,19 @@
 from pathlib import Path
 import re
-from pathlib import Path
 from typing import Any, Dict
 import difflib
 import random
+from pathlib import Path
+import subprocess
+import sys
+
+def show_student_picture(name, pics_dir="pics"):
+    first = name.split()[0].lower()
+
+    for file in Path(pics_dir).glob("*.[jp][pn]g"):
+        if file.stem.lower() == first:
+            if sys.platform == "darwin":
+                subprocess.run(["open", str(file.resolve())])
 
 _RTF_CTRL_RE = re.compile(
     r"""
@@ -253,6 +263,7 @@ while True:
             continue
         chosen = random.choice(list(scores.keys()))
         print(f"🎲 Randomly selected: {chosen}")
+        show_student_picture(chosen)
         continue
 
     if verb == "add" and len(tokens) >= 2:
